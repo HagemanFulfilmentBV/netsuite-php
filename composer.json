@@ -1,0 +1,32 @@
+{
+    "name": "hageman/netsuite-php",
+    "description": "PHP library to communicate with NetSuite",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bert van der Stelt",
+            "email": "b.van.der.stelt@hageman.nl",
+            "role": "Owner,Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "laravel/framework": "9.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hageman\\NetSuite\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hageman\\NetSuite\\ServiceProvider"
+            ]
+        }
+    }
+}
