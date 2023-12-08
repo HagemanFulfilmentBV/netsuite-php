@@ -3,6 +3,7 @@
 namespace Hageman\NetSuite;
 
 use Exception;
+use Illuminate\Support\Arr;
 
 class NetSuite
 {
@@ -27,18 +28,25 @@ class NetSuite
     /**
      * Get config value or return default.
      *
-     * @param string $key
+     * @param $key
      * @param null $default
      *
      * @return mixed
      */
-    public static function config(string $key, $default = null)
+    public static function config($key, $default = null)
     {
         /* Try to load config from application container */
         try {
             return config($key, $default);
         } catch(Exception $e) {
             // Skip error
+        }
+
+        /* Check for set */
+        if(is_array($key) && is_null($default)) {
+            foreach(Arr::dot($key) as $k => $v) data_set(static::$config, $k, $v);
+
+            return true;
         }
 
         /* Load the static config from file */
