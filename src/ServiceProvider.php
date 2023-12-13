@@ -24,7 +24,7 @@ class ServiceProvider extends BaseServiceProvider
         if($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/netsuite.php' => config_path('netsuite.php'),
-            ], 'netsuite-config');
+            ], 'hageman-netsuite-php');
         }
     }
 }

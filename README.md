@@ -1,6 +1,12 @@
 # Hageman - NetSuite - PHP library
 An open source PHP library free to use and collaborate. This package contains classes to interact with the NetSuite ERP.
 
+Installation  
+Run `composer require hageman/netsuite-php`
+
+For Laravel integration:  
+Run `php artisan vendor:publish --tag=hageman-netsuite-php`
+
 Source code managed via GitHub: https://github.com/HagemanFulfilmentBV/netsuite-php
 
 <img src="https://badgen.net/packagist/lang/hageman/netsuite-php" alt="language">

@@ -12,7 +12,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.3|^8.0|^8.1|^8.2",
+        "php": "^8.2",
         "ext-curl": "*",
         "ext-json": "*",
         "laravel/framework": "^9"
