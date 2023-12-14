@@ -35,7 +35,9 @@
                 // It is possible to override the default data load of this class
                 'defaults' => [
                     'administrationCode' => 0,
+                    'subsidiary' => 0,
                     'projectGroup' => 0,
+                    'webshopCode' => 0,
                 ]
             ]
         ]

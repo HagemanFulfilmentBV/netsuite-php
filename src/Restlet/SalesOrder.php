@@ -22,6 +22,7 @@ class SalesOrder extends Restlet
      */
     protected $data = [
         'administrationCode' => null,           // Customer number at Hageman
+        'subsidiary' => null,                   // Subsidiary in NetSuite
         'projectGroup' => null,                 // Project group code
         'webshopCode' => null,                  // Webshop code for label provider
         'language' => null,                     // Language used on order documents
