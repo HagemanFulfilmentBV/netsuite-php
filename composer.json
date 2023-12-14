@@ -15,7 +15,7 @@
         "php": "^8.2",
         "ext-curl": "*",
         "ext-json": "*",
-        "laravel/framework": "^9"
+        "laravel/framework": "^10"
     },
     "autoload": {
         "psr-4": {
