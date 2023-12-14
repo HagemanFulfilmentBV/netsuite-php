@@ -43,7 +43,7 @@ abstract class Restlet implements JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        if(!is_null($data)) foreach(Arr::dot($data) as $k => $v) data_set($this->data, $k, $v);
+        if(!empty($data)) foreach(Arr::dot($data) as $k => $v) data_set($this->data, $k, $v);
     }
 
     /**
