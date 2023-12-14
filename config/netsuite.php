@@ -31,6 +31,8 @@
 
             'SalesOrder' => [
                 'script' => 0,
+
+                // It is possible to override the default data load of this class
                 'defaults' => [
                     'administrationCode' => 0,
                     'projectGroup' => 0,
