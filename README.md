@@ -53,6 +53,7 @@ Set an array with your options as parameter for the config function, prior to ca
 ```php
 $salesOrder = new \Hageman\NetSuite\Restlet\SalesOrder([
     'administrationCode' => null,           // Customer number at Hageman
+    'subsidiary' => null,                   // Subsidiary in NetSuite
     'projectGroup' => null,                 // Project group code
     'webshopCode' => null,                  // Webshop code for label provider
     'language' => null,                     // Language used on order documents
