@@ -23,24 +23,27 @@ Set an array with your options as parameter for the config function, prior to ca
 ```php
 \Hageman\NetSuite::config([
     'signature-method' => 'HMAC-SHA256',
-    'account' => null,
-    'realm' => null,
+    'account' => '',
+    'realm' => '',
     'consumer' => [
-        'key' => null,
-        'secret' => null,
+        'key' => '',
+        'secret' => '',
     ],
     'token' => [
-        'key' => null,
-        'secret' => null,
+        'key' => '',
+        'secret' => '',
     ],
     'restlet' => [
-        'url' => null,
+        'url' => '',
         'SalesOrder' => [
             'script' => 0,
             
             // It is possible to override the default data load of this class
             'defaults' => [     
-                'administrationCode' => null,
+                'administrationCode' => 0,
+                'subsidiary' => 0,
+                'projectGroup' => 0,
+                'webshopCode' => 0,
             ],           
         ],
     ],
