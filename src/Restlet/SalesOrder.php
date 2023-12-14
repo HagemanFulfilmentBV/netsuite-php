@@ -111,7 +111,7 @@ class SalesOrder extends Restlet
 
         $defaults = NetSuite::config('netsuite.restlet.SalesOrder.defaults');
 
-        if(!is_null($defaults)) foreach(Arr::dot($defaults) as $k => $v) data_set($this->data, $k, $v);
+        if(!empty($defaults)) foreach(Arr::dot($defaults) as $k => $v) data_set($this->data, $k, $v);
 
         parent::__construct($data);
     }
